@@ -85,7 +85,7 @@ public func maximum(array : [Nat]) : async Nat {
   return(array_max);
 };
 
-//Challenge 9
+//Challenge 9 - from solution
 public func remove_from_array(array : [Nat], n : Nat) :async [Nat] {
   var new_array : [Nat] = []; 
   for (val in array.vals()){
@@ -96,7 +96,7 @@ public func remove_from_array(array : [Nat], n : Nat) :async [Nat] {
   return(new_array);
 };
 
-//Challenge 10 - selection sort
+//Challenge 10 - selection sort -  - from solution
 
 private func _swap(array : [Nat], i : Nat, j : Nat) : [Nat]{
   let array_mutable = Array.thaw<Nat>(array);
