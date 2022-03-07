@@ -102,7 +102,7 @@ public func selection_sort(array : [Nat]) : async [Nat] {
   for(i in Iter.range(0, size - 1)){
     for(j in Iter.range(i, size - 1)){
       if(sorted[j] < sorted[index_minimum]){
-        index_minimum = j;
+        index_minimum := j;
       };
     };
   sorted := _swap(sorted, index_minimum, i);  
