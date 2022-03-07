@@ -71,8 +71,8 @@ public func sum_of_array(array : [Nat]) : async Nat {
   };
 
 //Challenge 8
-public func maximum() : async Nat {
-let array : [Nat] = [1, 1, 2, 3, 5, 11];
+public func maximum(array : [Nat]) : async Nat {
+//let array : [Nat] = [1, 1, 2, 3, 5, 11];
 var array_max : Nat = 0;
   for (value in array.vals()){
     if (value > array_max){
