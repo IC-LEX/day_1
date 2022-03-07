@@ -45,8 +45,10 @@ public func clear_counter() : async Text {
   };
 
 //Challenge 5
-public func divide(n : Nat, m : Nat) : async Nat {
-     return(n % m);
+public func divide(n : Nat, m : Nat) : async Bool {
+     var remainder : Nat = 0;
+     remainder:=(n % m);
+     return(!remainder);
   };
 
 //Challenge 6
