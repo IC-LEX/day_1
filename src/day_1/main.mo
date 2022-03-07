@@ -1,3 +1,6 @@
+import Text "mo:base/Text;
+import Nat "mo:base/Nat;
+import Array "mo:base/Array
 actor {
 //  public func greet(name : Text) : async Text {
 //    return "Hello, " # name # "!";
