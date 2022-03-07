@@ -86,7 +86,7 @@ public func maximum(array : [Nat]) : async Nat {
 public func remove_from_array(remove_match : [Nat]) : async [Nat]{
 let array_in : [Nat] = [13, 1, 4, 3, 5, 11];
 var array_out : [Nat] = [];
-  for (value in array.vals()){
+  for (value in array_in.vals()){
     if (value != remove_match){
       array_out.append(value)
     };
