@@ -53,9 +53,12 @@ public func divide(n : Nat, m : Nat) : async Bool {
   };
 
 //Challenge 6
-//public func is_even(Nat) : async BOOLEAN {
-//      
-//  };
+public func is_even(n : Nat) : async BOOLEAN {
+     if (n % 2 == 0)
+        {return(true);}
+     else
+        {return(false);}      
+  };
 
 //Challenge 7
 //public func sum_of_array(ARRAY) : async Nat {
