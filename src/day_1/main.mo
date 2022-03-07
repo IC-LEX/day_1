@@ -88,15 +88,25 @@ public func maximum(array : [Nat]) : async Nat {
 public func remove_from_array(array : [Nat], n : Nat) :async [Nat] {
   var new_array : [Nat] = []; 
   for (val in array.vals()){
-    if(val !=n) {
+    if(val !=n ) {
       new_array := Array.append<Nat>(new_array, [val]); 
     };
   };
+  return(new_array);
 };
 
-//Challenge 10
-//public func selection_sort() : async SORTEDARRAY {
-//      
-//  };
-
+//Challenge 10 - selection sort
+public func selection_sort(array : [Nat]) : async [Nat]] {
+  var sorted = array;
+  let size = array.size();
+  for(i in Iter.range(0, size - 1)){
+    for(j in Iter.range(i, size - 1)){
+      if(sorted[j] < sorted[index_minimum]){
+        index_minimum = j;
+      };
+    };
+  sorted := _swap(sorted, index_minimum, i);  
+  };
+  return(sorted);
 };
+
