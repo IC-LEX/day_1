@@ -37,7 +37,7 @@ public func increment_counter(Nat : n) : async Nat {
      return(counter+=n)
   };
 
-//public func clear_counter() : async Nat {
+public func clear_counter() : async Nat {
      counter:=0
      return(counter)
   };
