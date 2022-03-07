@@ -1,9 +1,16 @@
+
+//Imports
 import Text "mo:base/Text";
 import Nat "mo:base/Nat";
 import Array "mo:base/Array";
 
 // Variables
-var counter Nat = 0;
+var counter : Nat=0;
+
+// Constants
+let hours_per_day = 24;
+let min_per_hour = 60 ;
+let sec_per_min = 60;
 
 actor {
 //  public func greet(name : Text) : async Text {
@@ -22,7 +29,7 @@ public func square(a:Nat) : async Nat {
 
 //Challenge 3
 public func days_to_second(num_days:Nat) : async Nat {
-      return(86400*num_days)
+      return(hours_per_day*min_per_hour*sec_per_min*num_days)
   };
 
 //Challenge 4
