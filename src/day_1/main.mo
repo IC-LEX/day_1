@@ -53,7 +53,7 @@ public func divide(n : Nat, m : Nat) : async Bool {
   };
 
 //Challenge 6
-public func is_even(n : Nat) : async BOOLEAN {
+public func is_even(n : Nat) : async Bool {
      if (n % 2 == 0)
         {return(true);}
      else
