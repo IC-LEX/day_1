@@ -1,6 +1,10 @@
 import Text "mo:base/Text";
 import Nat "mo:base/Nat";
 import Array "mo:base/Array";
+
+// Variables
+var counter = 0
+
 actor {
 //  public func greet(name : Text) : async Text {
 //    return "Hello, " # name # "!"
@@ -8,23 +12,23 @@ actor {
 
 //Challenge 1
   public func add( a:Nat, b:Nat):async Nat {
-      return (a+b)
+      return(a+b)
   };
 
 //Challenge 2
-//public func square(a:Nat) : async Nat {
-//      return a*a
-//  };
+public func square(a:Nat) : async Nat {
+      return(a*a)
+  };
 
 //Challenge 3
-//public func days_to_second(num_days:Nat) : async Nat {
-//      return 86400*num_days
-//  };
+public func days_to_second(num_days:Nat) : async Nat {
+      return(86400*num_days)
+  };
 
 //Challenge 4
-//public func increment_counter(Nat n) : async Nat {
-//      
-//  };
+public func increment_counter(Nat n) : async Nat {
+     return(counter+n)
+  };
 
 //public func clear_counter() : async Nat {
 //      
