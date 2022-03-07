@@ -18,7 +18,7 @@ actor {
 //  };
 
 //Challenge 1
-  public func add( a:Nat, b:Nat):async Nat {
+  public func add( a:Nat, b:Nat) : async Nat {
       return(a+b)
   };
 
@@ -40,7 +40,7 @@ public func increment_counter(Nat : n) : async Nat {
 //public func clear_counter() : async Nat {
      counter:=0
      return(counter)
-//  };
+  };
 
 //Challenge 5
 //public func divide(Nat n, Nat m) : async BOOLEAN {
