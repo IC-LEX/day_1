@@ -33,7 +33,7 @@ public func days_to_second(num_days:Nat) : async Nat {
   };
 
 //Challenge 4
-public func increment_counter(Nat n) : async Nat {
+public func increment_counter(Nat : n) : async Nat {
      return(counter+=n)
   };
 
