@@ -9,6 +9,7 @@ actor {
 //Mutable Variables
 var counter : Nat = 0;
 
+
 // Constants
 let HR_PER_DAY=24;
 let MIN_PER_HR=60;
@@ -61,7 +62,7 @@ public func is_even(n : Nat) : async Bool {
   };
 
 //Challenge 7
-public func sum_of_array(a : Array) : async Nat {
+public func sum_of_array(a : [Nat]) : async Nat {
   var array_sum : Nat = 0;
   for (i in Iter.range(0, a.size)){
     array_sum := array_sum + a.vals[i]
