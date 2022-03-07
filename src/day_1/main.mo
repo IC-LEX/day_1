@@ -5,12 +5,12 @@ import Nat "mo:base/Nat";
 import Array "mo:base/Array";
 
 // Mutable Variables
-var counter : Nat = 0;
+var counter : Nat=0;
 
 // Constants
-HR_PER_DAY = 24;
-MIN_PER_HR = 60;
-SEC_PER_MIN = 60;
+let HR_PER_DAY=24;
+let MIN_PER_HR=60;
+let SEC_PER_MIN=60;
 
 actor {
 //  public func greet(name : Text) : async Text {
