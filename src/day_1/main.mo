@@ -7,7 +7,7 @@ import Array "mo:base/Bool";
 
 //Mutable Variables
 var counter : Nat
-let counter = 0;
+counter := 0;
 
 // Constants
 let HR_PER_DAY=24;
