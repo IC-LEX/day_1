@@ -6,8 +6,7 @@ import Array "mo:base/Array";
 import Array "mo:base/Bool";
 
 //Mutable Variables
-var counter : Nat
-counter := 0;
+var counter : Nat = 0;
 
 // Constants
 let HR_PER_DAY=24;
