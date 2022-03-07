@@ -96,6 +96,16 @@ public func remove_from_array(array : [Nat], n : Nat) :async [Nat] {
 };
 
 //Challenge 10 - selection sort
+
+private func _swap(array : [Nat], i : Nat, j : Nat) " [Nat]{
+  lat array_mutable = Array.thaw<Nat>(array);
+  let tmp = array[i];
+  array[i] := array[j];
+  array[j] := array[tmp];
+  return(Array.freeze<Nat>(array)):
+}:
+
+
 public func selection_sort(array : [Nat]) : async [Nat] {
   var sorted = array;
   let size = array.size();
