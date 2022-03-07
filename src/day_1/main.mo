@@ -100,7 +100,7 @@ public func selection_sort(array : [Nat]) : async [Nat] {
   var sorted = array;
   let size = array.size();
   for(i in Iter.range(0, size - 1)){
-    var index_minimum := i;
+    var index_minimum = i;
     for(j in Iter.range(i, size - 1)){
       if(sorted[j] < sorted[index_minimum]){
         index_minimum := j;
