@@ -3,7 +3,7 @@ import Nat "mo:base/Nat";
 import Array "mo:base/Array";
 
 // Variables
-var counter = 0
+var counter = 0;
 
 actor {
 //  public func greet(name : Text) : async Text {
@@ -27,7 +27,8 @@ public func days_to_second(num_days:Nat) : async Nat {
 
 //Challenge 4
 public func increment_counter(Nat n) : async Nat {
-     return(counter+n)
+     counter:=counter+n
+     return(counter)
   };
 
 //public func clear_counter() : async Nat {
