@@ -61,9 +61,15 @@ public func is_even(n : Nat) : async Bool {
   };
 
 //Challenge 7
-//public func sum_of_array(ARRAY) : async Nat {
-//      
-//  };
+public func sum_of_array(a : Array) : async Nat {
+var Nat : array_sum = 0;
+var i : Nat = 0;
+While i < a.size
+        {
+          array_sum = array_sum+a[i];
+          +=i;
+        };   
+  };
 
 //Challenge 8
 //public func maximum(ARRAY) : async Nat {
