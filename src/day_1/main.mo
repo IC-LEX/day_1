@@ -46,7 +46,7 @@ public func clear_counter() : async Text {
 
 //Challenge 5
 public func divide(n : Nat, m : Nat) : async Bool {
-     if ((n % m) == 0)
+     if (n % m == 0)
         {return(true);}
      else
         {return(false);}
