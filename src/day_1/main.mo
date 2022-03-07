@@ -67,7 +67,7 @@ var i : Nat = 0;
 While i < a.size
         {
           array_sum = array_sum+a[i];
-          i+=i;
+          i:=i+1;
         };   
   };
 
