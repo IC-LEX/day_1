@@ -1,11 +1,11 @@
 
-actor {
 //Imports
 import Text "mo:base/Text";
 import Nat "mo:base/Nat";
 import Array "mo:base/Array";
 import Bool "mo:base/Bool";
 
+actor {
 //Mutable Variables
 var counter : Nat = 0;
 
