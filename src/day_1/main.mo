@@ -72,26 +72,27 @@ public func sum_of_array(array : [Nat]) : async Nat {
 
 //Challenge 8
 public func maximum(array : [Nat]) : async Nat {
-//let array : [Nat] = [1, 1, 2, 3, 5, 11];
-var array_max : Nat = 0;
-  for (value in array.vals()){
-    if (value > array_max){
-      array_max := value
+  //let array : [Nat] = [1, 1, 2, 3, 5, 11];
+  var array_max : Nat = 0;
+    for (value in array.vals()){
+      if (value > array_max){
+        array_max := value
+      };
     };
-  };
   return(array_max);
 };
 
 //Challenge 9
-//public func remove_from_array(remove_match : Nat) : async Array {
-//let array : [Nat] = [13, 1, 4, 3, 5, 11];
-//  for (value in array.vals()){
-//    if (value == remove_match){
-//      array := value
-//    };
-//  };
-//  return(array_max);        
-//  };
+public func remove_from_array(remove_match : Nat) : async Array {
+let array_in : [Nat] = [13, 1, 4, 3, 5, 11];
+let array_out : [Nat] = [];
+  for (value in array.vals()){
+    if (value != remove_match){
+      array_out.append(value)
+    };
+  };
+  return(array_out);        
+  };
 
 //Challenge 10
 //public func selection_sort() : async SORTEDARRAY {
