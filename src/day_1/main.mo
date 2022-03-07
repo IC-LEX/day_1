@@ -86,10 +86,8 @@ public func maximum(array : [Nat]) : async Nat {
 
 //Challenge 9
 public func remove_from_array(array_in : [Nat], remove_match : Nat) : async [Nat]{
-  Array.filter(array_in, func(remove_match : Nat) : Bool {array_in.vals() != remove_match});
-return(array_in);         
+  return(Array.filter(array_in, func(remove_match : Nat) : Bool {array_in.vals() != remove_match}));
   };
-
 //Challenge 10
 //public func selection_sort() : async SORTEDARRAY {
 //      
