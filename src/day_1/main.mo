@@ -45,9 +45,9 @@ public func clear_counter() : async Text {
   };
 
 //Challenge 5
-//public func divide(Nat n, Nat m) : async BOOLEAN {
-//      
-//  };
+public func divide(n : Nat, m : Nat) : async BOOLEAN {
+     return(n % m);
+  };
 
 //Challenge 6
 //public func is_even(Nat) : async BOOLEAN {
