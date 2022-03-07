@@ -27,12 +27,11 @@ public func days_to_second(num_days:Nat) : async Nat {
 
 //Challenge 4
 public func increment_counter(Nat n) : async Nat {
-     counter:=counter+n
-     return(counter)
+     return(counter+=n)
   };
 
 //public func clear_counter() : async Nat {
-//      
+     return(counter+=n)
 //  };
 
 //Challenge 5
