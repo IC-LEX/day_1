@@ -1,4 +1,5 @@
 
+actor {
 //Imports
 import Text "mo:base/Text";
 import Nat "mo:base/Nat";
@@ -13,7 +14,6 @@ let HR_PER_DAY=24;
 let MIN_PER_HR=60;
 let SEC_PER_MIN=60;
 
-actor {
 //  public func greet(name : Text) : async Text {
 //    return "Hello, " # name # "!"
 //  };
