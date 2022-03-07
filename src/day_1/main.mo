@@ -19,27 +19,27 @@ actor {
 
 //Challenge 1
   public func add( a:Nat, b:Nat) : async Nat {
-      return(a+b)
+      return(a+b);
   };
 
 //Challenge 2
 public func square(a:Nat) : async Nat {
-      return(a*a)
+      return(a*a);
   };
 
 //Challenge 3
 public func days_to_second(num_days:Nat) : async Nat {
-      return(HR_PER_DAY*MIN_PER_HR*SEC_PER_MIN*num_days)
+      return(HR_PER_DAY*MIN_PER_HR*SEC_PER_MIN*num_days);
   };
 
 //Challenge 4
 public func increment_counter(n : Nat) : async Nat {
-     return(counter+=n)
+     return(counter+=n);
   };
 
-public func clear_counter() : async Nat {
+public func clear_counter() : async Text {
      counter:=0;
-     return(counter)
+     return("counter reset to zero");
   };
 
 //Challenge 5
