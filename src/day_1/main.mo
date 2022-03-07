@@ -4,7 +4,8 @@ import Text "mo:base/Text";
 import Nat "mo:base/Nat";
 import Array "mo:base/Array";
 import Bool "mo:base/Bool";
-Import Buffer "mo:base/Buffer";
+import Buffer "mo:base/Buffer";
+import Debug "mo:base/Debug";
 
 actor {
 //Mutable Variables
@@ -85,11 +86,11 @@ public func maximum(array : [Nat]) : async Nat {
 
 //Challenge 9
 public func remove_from_array(remove_match : Nat) : async [Nat]{
-let array_in : [Nat] = [13, 1, 4, 3, 5, 11];
+let array_in : [Nat] = [var 13, 1, 4, 3, 5, 11];
 var array_out : [Nat] = [];
   for (value in array_in.vals()){
     if (value != remove_match){
-  //    array_out.append(value)
+      array_out :=Array.<value>(array_out)
     };
   };
   return(array_out);        
