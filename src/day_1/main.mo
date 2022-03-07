@@ -101,7 +101,7 @@ private func _swap(array : [Nat], i : Nat, j : Nat) : [Nat]{
   let array_mutable = Array.thaw<Nat>(array);
   let tmp = array[i];
   array[i] := array[j];
-  array[j] := array[tmp];
+  array[j] := tmp;
   return(Array.freeze<Nat>(array));
 };
 
