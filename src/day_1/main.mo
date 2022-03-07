@@ -71,9 +71,16 @@ public func sum_of_array() : async Nat {
   };
 
 //Challenge 8
-//public func maximum(ARRAY) : async Nat {
-//      
-//  };
+public func maximum(ARRAY) : async Nat {
+let array : [Nat] = [1, 1, 2, 3, 5, 11];
+var array_max : Nat = 0;
+  for (value in array.vals()){
+    if (value > array_max){
+      array_max := value
+    };
+  };
+  return(array_sum);
+};
 
 //Challenge 9
 //public func remove_from_array(ARRAY, Nat) : async ARRAY {
