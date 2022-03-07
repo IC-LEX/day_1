@@ -108,5 +108,5 @@ public func selection_sort(array : [Nat]) : async [Nat] {
   sorted := _swap(sorted, index_minimum, i);  
   };
   return(sorted);
+  };
 };
-
