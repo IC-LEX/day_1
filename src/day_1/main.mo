@@ -4,7 +4,6 @@ import Text "mo:base/Text";
 import Nat "mo:base/Nat";
 import Array "mo:base/Array";
 import Bool "mo:base/Bool";
-import Iter "mo.base/Iter";
 
 actor {
 //Mutable Variables
@@ -63,10 +62,10 @@ public func is_even(n : Nat) : async Bool {
   };
 
 //Challenge 7
-public func sum_of_array(a : [var Nat]) : async Nat {
-  var array_sum : Nat = 10;
-  //for (i in Iter.range(0, a.size)){
-  //  array_sum := array_sum + a.vals[i]};
+public func sum_of_array(array : [Nat]) : async Nat {
+  var array_sum : Nat = 0;
+  for (value in array.vals()){
+    array_sum := array_sum + value};
   return(array_sum);
   };
 
