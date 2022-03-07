@@ -3,7 +3,7 @@
 import Text "mo:base/Text";
 import Nat "mo:base/Nat";
 import Array "mo:base/Array";
-import Array "mo:base/Bool";
+import Bool "mo:base/Bool";
 
 //Mutable Variables
 var counter : Nat = 0;
