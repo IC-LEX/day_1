@@ -97,27 +97,27 @@ public func remove_from_array(array : [Nat], n : Nat) :async [Nat] {
 
 //Challenge 10 - selection sort
 
-private func _swap(array : [Nat], i : Nat, j : Nat) : [Nat]{
-  let array_mutable = Array.thaw<Nat>(array);
-  let tmp = array[i];
-  array[i] := array[j];
-  array[j] := array[tmp];
-  return(Array.freeze<Nat>(array));
-};
+//private func _swap(array : [Nat], i : Nat, j : Nat) : [Nat]{
+//  let array_mutable = Array.thaw<Nat>(array);
+//  let tmp = array[i];
+//  array[i] := array[j];
+//  array[j] := array[tmp];
+//  return(Array.freeze<Nat>(array));
+//};
 
 
-public func selection_sort(array : [Nat]) : async [Nat] {
-  var sorted = array;
-  let size = array.size();
-  for(i in Iter.range(0, size - 1)){
-    var index_minimum = i;
-    for(j in Iter.range(i, size - 1)){
-      if(sorted[j] < sorted[index_minimum]){
-        index_minimum := j;
-      };
-    };
-  sorted := _swap(sorted, index_minimum, i);  
-  };
-  return(sorted);
-  };
+//public func selection_sort(array : [Nat]) : async [Nat] {
+//  var sorted = array;
+//  let size = array.size();
+//  for(i in Iter.range(0, size - 1)){
+//    var index_minimum = i;
+//    for(j in Iter.range(i, size - 1)){
+//      if(sorted[j] < sorted[index_minimum]){
+//        index_minimum := j;
+//      };
+//    };
+//  sorted := _swap(sorted, index_minimum, i);  
+//  };
+//  return(sorted);
+//  };
 };
