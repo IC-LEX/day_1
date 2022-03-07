@@ -62,8 +62,8 @@ public func is_even(n : Nat) : async Bool {
   };
 
 //Challenge 7
-public func sum_of_array() : async Nat {
-  let array : [Nat] = [1,1,2];
+public func sum_of_array(array : [Nat]) : async Nat {
+  //let array : [Nat] = [1,1,2];
   var array_sum : Nat = 0;
   for (value in array.vals()){
     array_sum := array_sum + value};
@@ -83,9 +83,15 @@ var array_max : Nat = 0;
 };
 
 //Challenge 9
-//public func remove_from_array(ARRAY, Nat) : async ARRAY {
-//      
-//  };
+public func remove_from_array(remove_match : Nat) : async Array {
+let array : [Nat] = [13, 1, 4, 3, 5, 11];
+  for (value in array.vals()){
+    if (value == remove_match){
+      array := value
+    };
+  };
+  return(array_max);        
+  };
 
 //Challenge 10
 //public func selection_sort() : async SORTEDARRAY {
