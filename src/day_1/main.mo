@@ -85,8 +85,43 @@ public func maximum(array : [Nat]) : async Nat {
 };
 
 //Challenge 9
-public func remove_from_array(array_in : [Nat], remove_match : Nat) : async [Nat]{
-    return(Array.filter(array_in, func(remove_match : Nat) : Bool {Array.vals() != remove_match}));
+public func remove_from_array(array : [Nat], n : Nat) :async [Nat] {
+var new_array : [Nat] = []; 
+for(vals in array.vals()){
+  if(vals !=n) {
+    new_array := Array.append<Nat>(new_array, [vals]); 
+  };
+};
+
+let f = func(n : Nat) : Bool {
+  if(n==){
+    return false
+  } else {
+    return true
+  }
+  
+  
+  
+  }
+}
+Return(Array.filter<Nat>()
+};
+//func filt<A>(xs : [A], f: A -> Bool : [A] {
+//  let ys : Buffer.Buffer<A> = Buffer(xs.size());
+//  for (x in xs.vals()) {
+//    switch (f(x)) {
+//      case null {};
+//      case (?y) {ys.add(y)};
+//    }
+//  }
+//  ys.toArray();
+//};
+  
+    
+// remove_match : Nat) : async [Nat]{
+//    return(Array.filter(array_in, func(remove_match : Nat) : Bool {Array.vals() != remove_match}));
+  
+  
   };
 //Challenge 10
 //public func selection_sort() : async SORTEDARRAY {
