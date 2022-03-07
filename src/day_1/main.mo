@@ -46,9 +46,12 @@ public func clear_counter() : async Text {
 
 //Challenge 5
 public func divide(n : Nat, m : Nat) : async Bool {
-     var remainder : Nat = 0;
-     remainder:=(n % m);
-     return(!remainder);
+     if ((n % m) == 0) {
+       return("true");
+     }
+     else {
+       return("false");
+     }
   };
 
 //Challenge 6
