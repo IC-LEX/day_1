@@ -4,7 +4,7 @@ import Text "mo:base/Text";
 import Nat "mo:base/Nat";
 import Array "mo:base/Array";
 
-// Mutable Variables
+//Mutable Variables
 var counter : Nat=0;
 
 // Constants
@@ -38,7 +38,7 @@ public func increment_counter(Nat : n) : async Nat {
   };
 
 public func clear_counter() : async Nat {
-     counter:=0
+     counter:=0;
      return(counter)
   };
 
