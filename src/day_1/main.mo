@@ -63,7 +63,7 @@ public func is_even(n : Nat) : async Bool {
 //Challenge 7
 public func sum_of_array(a : Array) : async Nat {
   var array_sum : Nat = 0;
-  for (i in Iter.range(0, a.size){
+  for (i in Iter.range(0, a.size)){
     array_sum = array_sum + a.vals[i]
   };
   return(array_sum);
