@@ -4,13 +4,13 @@ import Text "mo:base/Text";
 import Nat "mo:base/Nat";
 import Array "mo:base/Array";
 
-// Variables
-var counter : Nat=0;
+// Mutable Variables
+var counter : Nat = 0;
 
 // Constants
-let hours_per_day = 24;
-let min_per_hour = 60 ;
-let sec_per_min = 60;
+HR_PER_DAY = 24;
+MIN_PER_HR = 60;
+SEC_PER_MIN = 60;
 
 actor {
 //  public func greet(name : Text) : async Text {
@@ -19,27 +19,27 @@ actor {
 
 //Challenge 1
   public func add( a:Nat, b:Nat):async Nat {
-      return(a+b);
+      return(a+b)
   };
 
 //Challenge 2
 public func square(a:Nat) : async Nat {
-      return(a*a);
+      return(a*a)
   };
 
 //Challenge 3
 public func days_to_second(num_days:Nat) : async Nat {
-      return(hours_per_day*min_per_hour*sec_per_min*num_days);
+      return(HR_PER_DAY*MIN_PER_HR*SEC_PER_MIN*num_days)
   };
 
 //Challenge 4
 public func increment_counter(Nat : n) : async Nat {
-     return(counter+=n);
+     return(counter+=n)
   };
 
 //public func clear_counter() : async Nat {
-     counter:=;
-     return(counter);
+     counter:=0
+     return(counter)
 //  };
 
 //Challenge 5
