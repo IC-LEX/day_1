@@ -83,15 +83,15 @@ var array_max : Nat = 0;
 };
 
 //Challenge 9
-public func remove_from_array(remove_match : Nat) : async Array {
-let array : [Nat] = [13, 1, 4, 3, 5, 11];
-  for (value in array.vals()){
-    if (value == remove_match){
-      array := value
-    };
-  };
-  return(array_max);        
-  };
+//public func remove_from_array(remove_match : Nat) : async Array {
+//let array : [Nat] = [13, 1, 4, 3, 5, 11];
+//  for (value in array.vals()){
+//    if (value == remove_match){
+//      array := value
+//    };
+//  };
+//  return(array_max);        
+//  };
 
 //Challenge 10
 //public func selection_sort() : async SORTEDARRAY {
