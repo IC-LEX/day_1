@@ -101,8 +101,8 @@ public func remove_from_array(array : [Nat], n : Nat) :async [Nat] {
 private func _swap(array : [Nat], i : Nat, j : Nat) : [Nat]{
   let array_mutable = Array.thaw<Nat>(array);
   let tmp = array[i];
-  array[i] := array[j];
-  array[j] := tmp;
+//  array[i] := array[j];
+//  array[j] := tmp;
   return(Array.freeze<Nat>(array));
 };
 
