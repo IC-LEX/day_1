@@ -6,7 +6,7 @@ import Array "mo:base/Array";
 import Array "mo:base/Bool";
 
 //Mutable Variables
-var counter : Nat;
+var counter : Nat
 let counter = 0;
 
 // Constants
