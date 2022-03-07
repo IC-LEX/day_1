@@ -3,7 +3,7 @@ import Nat "mo:base/Nat";
 import Array "mo:base/Array";
 
 // Variables
-var counter = 0;
+var counter Nat = 0;
 
 actor {
 //  public func greet(name : Text) : async Text {
@@ -31,7 +31,8 @@ public func increment_counter(Nat n) : async Nat {
   };
 
 //public func clear_counter() : async Nat {
-     return(counter+=n)
+     counter:=0
+     return(counter)
 //  };
 
 //Challenge 5
