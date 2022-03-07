@@ -62,7 +62,8 @@ public func is_even(n : Nat) : async Bool {
   };
 
 //Challenge 7
-public func sum_of_array(array : [Nat]) : async Nat {
+public func sum_of_array() : async Nat {
+  let array : [Nat] = ["1","1","2"];
   var array_sum : Nat = 0;
   for (value in array.vals()){
     array_sum := array_sum + value};
