@@ -3,9 +3,11 @@
 import Text "mo:base/Text";
 import Nat "mo:base/Nat";
 import Array "mo:base/Array";
+import Array "mo:base/Bool";
 
 //Mutable Variables
-var counter : Nat=0;
+var counter : Nat;
+let counter = 0;
 
 // Constants
 let HR_PER_DAY=24;
