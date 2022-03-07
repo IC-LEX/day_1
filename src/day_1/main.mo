@@ -87,9 +87,9 @@ public func maximum(array : [Nat]) : async Nat {
 //Challenge 9
 public func remove_from_array(array : [Nat], n : Nat) :async [Nat] {
   var new_array : [Nat] = []; 
-  for(vals in array.vals()){
-    if(vals !=n) {
-      new_array := Array.append<Nat>(new_array, [vals]); 
+  for (val in array.vals()){
+    if(val !=n) {
+      new_array := Array.append<Nat>(new_array, [val]); 
     };
   };
 };
