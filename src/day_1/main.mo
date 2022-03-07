@@ -97,7 +97,7 @@ public func remove_from_array(array : [Nat], n : Nat) :async [Nat] {
 
 //Challenge 10 - selection sort
 
-private func _swap(array : [Nat], i : Nat, j : Nat) " [Nat]{
+private func _swap(array : [Nat], i : Nat, j : Nat) : [Nat]{
   lat array_mutable = Array.thaw<Nat>(array);
   let tmp = array[i];
   array[i] := array[j];
