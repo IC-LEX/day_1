@@ -4,7 +4,7 @@ import Text "mo:base/Text";
 import Nat "mo:base/Nat";
 import Array "mo:base/Array";
 import Bool "mo:base/Bool";
-Import Buffer "mo:base/Buffer";
+Import Buff "mo:base/Buffer";
 
 actor {
 //Mutable Variables
@@ -89,7 +89,7 @@ let array_in : [Nat] = [13, 1, 4, 3, 5, 11];
 var array_out : [Nat] = [];
   for (value in array_in.vals()){
     if (value != remove_match){
-      array_out.append(value)
+  //    array_out.append(value)
     };
   };
   return(array_out);        
