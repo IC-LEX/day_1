@@ -20,55 +20,55 @@ let SEC_PER_MIN=60;
 
 //Challenge 1
   public func add( a : Nat, b : Nat) : async Nat {
-      return(a+b);
+    return(a+b);
   };
 
 //Challenge 2
 public func square(a : Nat) : async Nat {
-      return(a*a);
+    return(a*a);
   };
 
 //Challenge 3
 public func days_to_second(num_days:Nat) : async Nat {
-      return(HR_PER_DAY*MIN_PER_HR*SEC_PER_MIN*num_days);
+    return(HR_PER_DAY*MIN_PER_HR*SEC_PER_MIN*num_days);
   };
 
 //Challenge 4
 public func increment_counter(n : Nat) : async Nat {
-     counter := counter + n;
-     return(counter);
+    counter := counter + n;
+    return(counter);
   };
 
 public func clear_counter() : async Text {
-     counter:=0;
-     return("counter reset to zero");
+    counter:=0;
+    return("counter reset to zero");
   };
 
 //Challenge 5
 public func divide(n : Nat, m : Nat) : async Bool {
-     if (n % m == 0)
-        {return(true);}
-     else
-        {return(false);}
+    if (n % m == 0)
+      {return(true);}
+    else
+      {return(false);}
   };
 
 //Challenge 6
 public func is_even(n : Nat) : async Bool {
-     if (n % 2 == 0)
-        {return(true);}
-     else
-        {return(false);}      
+    if (n % 2 == 0)
+      {return(true);}
+    else
+      {return(false);}      
   };
 
 //Challenge 7
 public func sum_of_array(a : Array) : async Nat {
-var Nat : array_sum = 0;
-var i : Nat = 0;
-While i < a.size
-        {
-          array_sum = array_sum+a[i];
-          i:=i+1;
-        };   
+  var Nat : array_sum = 0;
+  var i : Nat = 0;
+  While (i < a.size){
+    array_sum = array_sum+a[i];
+    i:=i+1;
+  };
+  return(array_sum);
   };
 
 //Challenge 8
