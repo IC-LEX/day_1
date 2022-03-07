@@ -65,8 +65,8 @@ public func sum_of_array(a : Array) : async Nat {
   var array_sum : Nat = 0;
   var i : Nat = 0;
   While (i < a.size){
-    array_sum = array_sum + a[i];
-    i += 1;
+    array_sum = array_sum + a[i]
+    i += 1
   };
   return(array_sum);
   };
