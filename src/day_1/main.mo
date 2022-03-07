@@ -4,8 +4,9 @@ import Text "mo:base/Text";
 import Nat "mo:base/Nat";
 import Array "mo:base/Array";
 import Bool "mo:base/Bool";
-import Buffer "mo:base/Buffer";
-import Debug "mo:base/Debug";
+// import Buffer "mo:base/Buffer";
+// import Debug "mo:base/Debug";
+import Iter "mo:base/Iter";
 
 actor {
 //Mutable Variables
