@@ -103,7 +103,7 @@ private func _swap(array : [Nat], i : Nat, j : Nat) : [Nat]{
   array[i] := array[j];
   array[j] := array[tmp];
   return(Array.freeze<Nat>(array));
-}:
+};
 
 
 public func selection_sort(array : [Nat]) : async [Nat] {
