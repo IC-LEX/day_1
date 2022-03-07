@@ -96,7 +96,7 @@ public func remove_from_array(array : [Nat], n : Nat) :async [Nat] {
 };
 
 //Challenge 10 - selection sort
-public func selection_sort(array : [Nat]) : async [Nat]] {
+public func selection_sort(array : [Nat]) : async [Nat] {
   var sorted = array;
   let size = array.size();
   for(i in Iter.range(0, size - 1)){
